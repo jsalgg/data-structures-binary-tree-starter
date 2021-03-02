@@ -3,7 +3,21 @@
 // order, and returns an array containing the values
 // in the order you visited them.
 function dfs(root){
-    // Your code here
+    let arr = [];
+
+    if (root !== null) {
+        arr.push(root.val)
+        let left = dfs(root.left)
+        let right = dfs(root.right);
+        if(left === undefined){
+            left = [];
+        }
+        if(right === undefined) {
+            right = [];
+        }
+        return arr.concat(left).concat(right)
+    };
+    return arr;
 }
 
 module.exports = { dfs };
