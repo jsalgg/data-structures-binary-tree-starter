@@ -8,6 +8,7 @@ class TreeNode {
     this.right = null;
     // this.root = null;
   }
+} /*
   preOrderArray(node) {
     //self, left, right
     //root node
@@ -29,7 +30,8 @@ class TreeNode {
         return arr.concat(left).concat(right)
     };
   }
-}
+}*/
+
 // root = new TreeNode('a');
 // let b = new TreeNode('b');
 // let c = new TreeNode('c');
